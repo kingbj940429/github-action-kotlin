@@ -13,3 +13,6 @@ jobs:
           java-version: ${{ secrets.JAVA_VERSION }}
           cache: 'gradle'
       - run: ./gradlew build --no-daemon
+
+      - run: |
+          echo "Hello!!"
