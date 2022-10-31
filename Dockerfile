@@ -1,7 +1,7 @@
-FROM gradle:7.3.2-jdk8 AS build
+FROM gradle:7.3.2-jdk11 AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
-RUN gradlew build --no-daemon
+RUN gradle build --no-daemon
 
 FROM azul/zulu-openjdk:11.0.15
 
