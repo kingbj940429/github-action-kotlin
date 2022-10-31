@@ -3,7 +3,7 @@ COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
 
-FROM zulu-openjdk:11.0.15
+FROM azul/zulu-openjdk:11.0.15
 
 EXPOSE 8080
 
