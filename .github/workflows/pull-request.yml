@@ -44,7 +44,7 @@ jobs:
       - run: |
           git config --global user.email kingbj0429@gmail.com && git config --global user.name kingbj940429
           echo "cloning app repo"
-          git clone -b feature/github-action-kotlin https://oauth2:${{ secrets.GH_PAT }}@github.com/${{ github.repository_owner }}/csg-sd-helm-charts.git
+          git clone -b feature/github-action-kotlin https://oauth2:${{ secrets.GH_PAT }}@github.com/lunit-io/csg-sd-helm-charts.git
           cd ./csg-sd-helm-charts/platform/dev/sample/github-action-kotlin
           echo "checkout source branch"
           git checkout feature/github-action-kotlin
