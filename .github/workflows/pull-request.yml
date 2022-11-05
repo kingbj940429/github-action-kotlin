@@ -36,4 +36,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: kingbj0429/github-action-kotlin:latest
+          tags: kingbj0429/github-action-kotlin:${{ github.sha }}
