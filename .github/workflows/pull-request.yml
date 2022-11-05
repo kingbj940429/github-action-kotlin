@@ -37,12 +37,3 @@ jobs:
           file: Dockerfile
           push: true
           tags: kingbj0429/github-action-kotlin:latest
-  add_labels:
-    runs-on: ubuntu-latest
-    needs: docker-build-push
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: |
-            preview
