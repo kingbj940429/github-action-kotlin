@@ -1,0 +1,3 @@
+secrets:
+  first: ${FIRST:lion}
+  second: ${SECOND:tiger}
